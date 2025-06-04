@@ -1,0 +1,32 @@
+.services-container {
+  padding: var(--spacing-lg) var(--spacing-xl);
+}
+
+.interactive-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.service-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+  .interactive-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-buttons {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .services-container {
+    padding: var(--spacing-md);
+  }
+}
